@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2019_06_06_131544) do
 
   create_table "stores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.integer "founded"
     t.text "description"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
