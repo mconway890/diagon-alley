@@ -7,4 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 stores = Store.create([{name: 'Ollivanders', description: 'Wand Shop', location: 'Diagon Alley'},
-                       {name: 'Potages Cauldron Shop', description: 'Cauldron Shop', location: 'Knockturn Alley'}])
+                       {name: 'Potages Cauldron Shop', description: 'Cauldron Shop', location: 'Knockturn Alley'},
+                       {name: 'Flourish and Blotts', description: 'Book Shop', location: 'Diagon Alley'},
+                       {name: 'Dystyl Phaelanges', description: 'Bones & Fossils Shop', location: 'Knockturn Alley'}])
