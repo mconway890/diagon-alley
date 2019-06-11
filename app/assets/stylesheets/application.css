@@ -14,3 +14,7 @@
  *= require_self
 
  */
+
+a.navbar-brand {
+  font-family: 'Henny Penny', cursive;
+}
