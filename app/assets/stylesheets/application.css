@@ -22,3 +22,10 @@ a.navbar-brand {
 i.icon-hand-up {
   text-decoration: none;
 }
+
+/* FOOTER */
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
