@@ -15,7 +15,7 @@
       <% @stores.each do |store| %>
         <tr scope="row">
           <td><%= store.name %></td>
-          <td><%= store.description %></td>
+          <td><%= store.tagline %></td>
           <td><%= store.location %></td>
           <td><%= link_to 'Shop', store %></td>
           <td><%#= link_to 'Edit', edit_store_path(store) %></td>
