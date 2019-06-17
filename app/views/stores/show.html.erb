@@ -1,15 +1,13 @@
 <p id="notice"><%= notice %></p>
 <div class="shopLogo">
-  <h1><i class="icon-magic"></i>Ollivanders</h1>
-  <h4>Makers of Fine Wands since 382 BC</h4>
+  <h1><i class="icon-magic"></i><%= @store.name %></h1>
+  <h4><%= @store.tagline %></h4>
 </div>
 <div class="container">
   <p>
-    <strong><%= @store.name %> - <%= @store.description %></strong>
+    <strong><%= @store.name %></strong>
   </p>
-  <p>
-    Ollivanders is a wand shop founded in 382 B.C. Located in Diagon Alley South Side in London, England, it is owned by the Ollivander family, widely acknowledged to be the best wandmakers in Great Britain.
-  </p>
+  <p><%= @store.description %></p>
   <p>
     <strong>Location:</strong>
     <%= @store.location %>
