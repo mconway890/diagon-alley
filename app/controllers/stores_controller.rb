@@ -21,6 +21,9 @@ class StoresController < ApplicationController
   def edit
   end
 
+  def dining
+  end
+
   # POST /stores
   # POST /stores.json
   def create
