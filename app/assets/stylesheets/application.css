@@ -33,4 +33,9 @@ i.icon-hand-up {
   margin-bottom: 20px;
 }
 
+iframe {
+  display: block;
+  margin: auto;
+}
+
 /* FOOTER */
