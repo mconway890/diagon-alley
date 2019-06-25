@@ -27,6 +27,9 @@ class StoresController < ApplicationController
   def map
   end
 
+  def hours
+  end
+
   # POST /stores
   # POST /stores.json
   def create
