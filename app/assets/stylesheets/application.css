@@ -26,8 +26,22 @@ body {
   min-height: 100%;
 }
 
+.table {
+  font-family: -webkit-pictograph;
+  background-color: #7f0909;
+  color: #ffc500;
+}
+
+thead, td, td a {
+  color: #ffc500;
+}
+
 a.navbar-brand {
   font-family: 'Henny Penny', cursive;
+}
+
+.navbar, a.navbar-brand i {
+  color: #ffc500;
 }
 
 i.icon-hand-up {
@@ -56,7 +70,7 @@ iframe {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 10px;
   background-color: #7f0909;
   color: #ffc500;
   text-align: center;
@@ -66,6 +80,8 @@ iframe {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  font-variant-caps: all-small-caps;
+  font-family: 'henny penny';
 }
 
 .icon-hand-up:before {
