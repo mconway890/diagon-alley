@@ -1,52 +1,39 @@
 <div class="container">
   <div class="row">
     <% @restaurants.each do |rest| %>
-    <div class="col-sm-6">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><%= rest.name %></h5>
-          <p class="card-text"><%= rest.description %></p>
-          <div class="card-footer">
-            <i class="icon-map-marker"></i>
-            <%= rest.location %>
-          </div>
-          <div class="text-center">
-            <button type="button" class="btn btn-dark btn-sm btn-block" data-toggle="modal" data-target="#menuModal">
-              Menu
-            </button>
-          </div>
-          <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="menuModalLabel">Three Broomsticks Menu</h5>
-                  <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <h6>Entrees</h6>
-                  <ul>
-                    <li>Cornish Pasties with Garden Salad: $9.99</li>
-                    <li>Shepherd's Pie with Garden Salad: $12.49</li>
-                    <li>Fish and Chips: $13.99</li>
-                    <li>Smoked Turkey Leg with Wedge Fries: $14.99</li>
-                  </ul>
-                  <h6>Soups And Salads</h6>
-                  <ul>
-                    <li>Split Pea and Ham Soup and Side Salad: $9.49</li>
-                    <li>Rotissere Smoked Chicken Salad: $9.99</li>
-                  </ul>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%= rest.name %></h5>
+            <p class="card-text"><%= rest.description %></p>
+            <div class="card-footer">
+              <i class="icon-map-marker"></i>
+              <%= rest.location %> | <%= link_to 'Menu', rest.menu, :target => "_blank" %>
+            </div>
+            <!-- <div class="text-center">
+              <button type="button" class="btn btn-dark btn-sm btn-block" data-toggle="modal" data-target="#menuModal">
+                Menu
+              </button>
+            </div>
+            <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="menuModalLabel">Three Broomsticks Menu</h5>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
-    </div>
     <% end %>
   </div>
 </div>
