@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :stores, only: [:show, :index]
+  resources :restaurants, only: [:show, :index]
 
-  get '/dining' => 'stores#dining'
   get '/map' => 'stores#map'
   get '/hours' => 'stores#hours'
 
