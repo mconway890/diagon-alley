@@ -26,6 +26,26 @@ body {
   min-height: 100%;
 }
 
+/* VIDEO */
+.home_video {
+ width: 100vw;
+ height: 100vh;
+ position: absolute;
+ object-fit: cover;
+ top: 0;
+ z-index: -2;
+}
+.home-video-wrapper {
+height: 100vh;
+display: flex;
+}
+h1.home {
+  color: white;
+  text-align: center;
+  font-family: 'Henny Penny', cursive;
+  padding: 200px;
+}
+
 .table {
   font-family: -webkit-pictograph;
   background-color: #7f0909;
@@ -34,6 +54,11 @@ body {
 
 thead, td, td a {
   color: #ffc500;
+}
+
+div.container {
+  background-color: white;
+  max-width: -webkit-fill-available;
 }
 
 a.navbar-brand {
@@ -72,10 +97,9 @@ iframe {
   bottom: 0;
   left: 0;
   padding: 10px;
-  background-color: #7f0909;
-  color: #ffc500;
+  background-color: white;
+  color: black;
   text-align: center;
-  max-width: 720px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -86,6 +110,6 @@ iframe {
 }
 
 .icon-hand-up:before {
-  color: #ffc500;
+  color: black;
   content: "\f0a6";
 }
