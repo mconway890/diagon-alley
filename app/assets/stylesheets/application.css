@@ -43,7 +43,10 @@ h1.home {
   color: white;
   text-align: center;
   font-family: 'Henny Penny', cursive;
-  padding: 200px;
+}
+
+p.lead {
+  color: white;
 }
 
 .table {
