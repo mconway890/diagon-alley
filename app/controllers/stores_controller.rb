@@ -30,6 +30,15 @@ class StoresController < ApplicationController
   def hours
   end
 
+  def about
+  end
+
+  def news
+  end
+
+  def whats_new
+  end
+
   # POST /stores
   # POST /stores.json
   def create
