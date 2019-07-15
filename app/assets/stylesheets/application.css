@@ -28,17 +28,19 @@ body {
 
 /* VIDEO */
 .home_video {
- width: 100vw;
- height: 100vh;
- position: absolute;
- object-fit: cover;
- top: 0;
- z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  z-index: -2;
 }
+
 .home-video-wrapper {
-height: 100vh;
-display: flex;
+  height: 100vh;
+  display: flex;
 }
+
 h1.home {
   color: white;
   text-align: center;
@@ -58,7 +60,6 @@ p.lead {
 thead, td, td a {
   color: #ffc500;
 } */
-
 div.container {
   background-color: white;
   max-width: -webkit-fill-available;
@@ -84,6 +85,23 @@ i.icon-hand-up {
   padding: 10px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* HOURS */
+.hour {
+  padding: 19.151px 0;
+  padding: 1.10833rem 0;
+  font-family: SimonCircularPro-Book, Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #757575;
+  border-top: 1px solid #757575;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hour-day, .hour-time {
+  flex: 1 0 33.333%;
 }
 
 /* MAP */
