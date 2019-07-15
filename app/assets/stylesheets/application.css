@@ -104,6 +104,15 @@ i.icon-hand-up {
   flex: 1 0 33.333%;
 }
 
+div.container.regular-hours {
+  max-width: 720px;
+  padding-top: 20px;
+}
+
+.hours-header {
+  font-size: 1.33rem;
+}
+
 /* MAP */
 iframe {
   display: block;
