@@ -60,7 +60,7 @@ p.lead {
 thead, td, td a {
   color: #ffc500;
 } */
-div.container {
+div#nav.container {
   background-color: white;
   max-width: -webkit-fill-available;
 }
@@ -111,19 +111,28 @@ div.container.regular-hours {
 
 .container-fluid {
   display: -ms-flexbox;
-display: flex;
--ms-flex: 1 1 auto;
-flex: 1 1 auto;
--ms-flex-direction: column;
-flex-direction: column;
--ms-flex-pack: center;
-justify-content: center;
--ms-flex-align: center;
-align-items: center;
+  display: flex;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .hours-header {
   font-size: 1.33rem;
+}
+
+/* NEWS AND EVENTS */
+div.container.news {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* MAP */
