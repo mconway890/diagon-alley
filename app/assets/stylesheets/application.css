@@ -127,6 +127,14 @@ div.container.regular-hours {
 }
 
 /* NEWS AND EVENTS */
+h1.display-3 {
+  font-size: 48px;
+}
+
+p.news {
+  font-size: 24px;
+}
+
 div.container.news {
   width: 100%;
   padding-right: 15px;
