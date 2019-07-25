@@ -51,6 +51,12 @@ p.lead {
   color: white;
 }
 
+div.jumbotron.home {
+  background-color: #ffffff00;
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  color: white;
+}
 /* .table {
   font-family: -webkit-pictograph;
   background-color: #7f0909;
@@ -144,7 +150,7 @@ div.container.news {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
-div.jumbotron {
+div.jumbotron.news {
   background: #333;
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
   text-align: center;
