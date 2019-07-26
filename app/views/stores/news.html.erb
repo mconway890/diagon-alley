@@ -1,45 +1,59 @@
 <body>
 
-<main role="main">
+  <main role="main">
 
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron news">
-    <div class="container">
-      <h1 class="display-3">News & Events</h1>
-      <p class="news">The latest Wizarding World news and events. Faster than a Nimbus 2000 and more reliable than the Daily Prophet!</p>
-    </div>
-  </div>
-
-  <div class="container news">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>DON'T PANIC!</h2>
-        <p>Learn the most effective protection spells <em>now</em>! Keep calm and stay protected. Don't be another victim!</p>
-        <p>Free classes every Monday at Midnight - Diagon Alley in front of Ollivanders.
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>IS YOUR OWL READY?</h2>
-        <p>The National S.M.S - Secret Messaging Service seeking Grade 1 Birds. URGENTLY REQUIRED</p>
-        <p>Recruitment Meeting at Woodside Arboretum 17th November at Noon</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>DEFENSIVE SPELLS TRAINING</h2>
-        <p>Intensive course with expert trainers! Master defensive wand skills in just one week! Enrol Now - MUST BE 18 TO APPLY</p>
-        <p>100% Ministry Approved</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron news">
+      <div class="container">
+        <h1 class="display-3">News & Events</h1>
+        <p class="news">The latest Wizarding World news and events. Faster than a Nimbus 2000 and more reliable than the Daily Prophet!</p>
       </div>
     </div>
 
-    <hr>
+    <div class="container news">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>DON'T PANIC!</h2>
+          <p>Learn the most effective protection spells
+            <em>now</em>!</p>
+          <button class="btn" data-toggle="collapse" data-target="#details-1">View details »</button>
+          <p id="details-1" class="collapse">
+            <br>
+            Keep calm and stay protected. Don't be another victim! Free classes every Monday at Midnight - Diagon Alley in front of Ollivanders.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>IS YOUR OWL READY?</h2>
+          <p>The National S.M.S - Secret Messaging Service seeking Grade 1 Birds. URGENTLY REQUIRED</p>
+          <button class="btn" data-toggle="collapse" data-target="#details-2">View details »</button>
+          <p id="details-2" class="collapse">
+            <br>
+            Recruitment Meeting at Woodside Arboretum 17th November at Noon
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>DEFENSIVE SPELLS TRAINING</h2>
+          <p>Intensive course with expert trainers!</p>
+          <button class="btn" data-toggle="collapse" data-target="#details-3">View details »</button>
+          <p id="details-3" class="collapse">
+            <br>
+            Master defensive wand skills in just one week! Enrol Now - MUST BE 18 TO APPLY
+            <strong>100% Ministry Approved</strong>
+          </p>
+        </div>
+      </div>
 
-  </div> <!-- /container -->
+      <hr>
 
-</main>
+    </div>
+    <!-- /container -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 
 </body>
