@@ -164,6 +164,11 @@ iframe {
   padding: 20px;
 }
 
+/* DINING */
+div.container.dining {
+  padding-top: 30px;
+}
+
 /* FOOTER */
 .footer {
   position: absolute;
