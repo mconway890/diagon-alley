@@ -1,27 +1,53 @@
-<p id="notice"><%= notice %></p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <p id="notice"><%= notice %></p>
 
-<div class="container">
-  <table class="table table-hover table-sm">
-    <thead>
-      <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Description</th>
-        <th scope="col">Location</th>
-        <th colspan="3"></th>
-      </tr>
-    </thead>
+    <div class="container">
+      <h2>Shops Directory</h2>
+      <p>Search shops, products and location:</p>
+      <input class="form-control" id="userInput" type="text" placeholder="Search..">
+      <br>
+      <table class="table table-hover table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Location</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
 
-    <tbody>
-      <% @stores.each do |store| %>
-        <tr scope="row">
-          <td><%= store.name %></td>
-          <td><%= store.tagline %></td>
-          <td><%= store.location %></td>
-          <td><%= link_to 'Shop', store %></td>
-          <td><%#= link_to 'Edit', edit_store_path(store) %></td>
-          <td><%#= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</div>
+        <tbody id="shopsTable">
+          <% @stores.each do |store| %>
+            <tr scope="row">
+              <td><%= store.name %></td>
+              <td><%= store.tagline %></td>
+              <td><%= store.location %></td>
+              <td><%= link_to 'Shop', store %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#userInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#shopsTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
