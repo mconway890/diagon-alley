@@ -31,7 +31,6 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  object-fit: cover;
   top: 0;
   z-index: -2;
 }
@@ -44,11 +43,12 @@ body {
 h1.home {
   color: white;
   text-align: center;
-  font-family: 'Henny Penny', cursive;
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
 p.lead {
   color: white;
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
 div.jumbotron.home {
@@ -56,6 +56,10 @@ div.jumbotron.home {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
   text-align: center;
   color: white;
+}
+
+h6 {
+  font-style: italic;
 }
 /* .table {
   font-family: -webkit-pictograph;
