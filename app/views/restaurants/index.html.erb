@@ -1,39 +1,37 @@
-<div class="container">
-  <div class="row">
-    <% @restaurants.each do |rest| %>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><%= rest.name %></h5>
-            <p class="card-text"><%= rest.description %></p>
-            <div class="card-footer">
-              <i class="icon-map-marker"></i>
-              <%= rest.location %> | <%= link_to 'Menu', rest.menu, :target => "_blank" %>
-            </div>
-            <!-- <div class="text-center">
-              <button type="button" class="btn btn-dark btn-sm btn-block" data-toggle="modal" data-target="#menuModal">
-                Menu
-              </button>
-            </div>
-            <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="menuModalLabel">Three Broomsticks Menu</h5>
-                    <button type="button" class="btn btn-dark" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body"></div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container dining">
+      <div class="row">
+        <% @restaurants.each do |rest| %>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><%= rest.name %></h5>
+                <p class="card-text"><%= rest.description %></p>
+                <div class="card-footer">
+                  <a data-toggle="tooltip" data-placement="left" title="<%= rest.location %>"><i class="icon-map-marker"></i></a>
+                  |
+                  <%= link_to 'Menu', rest.menu, :target => "_blank" %>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
-        </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-</div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
