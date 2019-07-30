@@ -24,6 +24,7 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
 /* VIDEO */
@@ -61,15 +62,7 @@ div.jumbotron.home {
 h6 {
   font-style: italic;
 }
-/* .table {
-  font-family: -webkit-pictograph;
-  background-color: #7f0909;
-  color: #ffc500;
-}
 
-thead, td, td a {
-  color: #ffc500;
-} */
 div#nav.container {
   background-color: white;
   max-width: -webkit-fill-available;
@@ -101,7 +94,6 @@ i.icon-hand-up {
 .hour {
   padding: 19.151px 0;
   padding: 1.10833rem 0;
-  font-family: SimonCircularPro-Book, Arial, Helvetica, sans-serif;
   border-bottom: 1px solid #757575;
   border-top: 1px solid #757575;
   display: -ms-flexbox;
@@ -117,9 +109,11 @@ i.icon-hand-up {
 div.container.regular-hours {
   max-width: 720px;
   padding-top: 20px;
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
 .container-fluid {
+  padding-top: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex: 1 1 auto;
@@ -130,10 +124,15 @@ div.container.regular-hours {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
 .hours-header {
   font-size: 1.33rem;
+}
+
+h1.jumbotron-title.header-md {
+  text-align: center;
 }
 
 /* NEWS AND EVENTS */
