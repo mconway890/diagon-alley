@@ -27,6 +27,10 @@ body {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
+body.text-center {
+  background-color: #07252f;
+}
+
 /* VIDEO */
 .home_video {
   width: 100vw;
@@ -48,8 +52,13 @@ h1.home {
 }
 
 p.lead {
+  font-size: 16px;
   color: white;
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
+}
+
+div.col-sm-8 {
+  padding-top: 40px;
 }
 
 div.jumbotron.home {
