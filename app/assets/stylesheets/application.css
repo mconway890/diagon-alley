@@ -100,6 +100,14 @@ i.icon-hand-up {
 }
 
 /* HOURS */
+#canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .hour {
   padding: 19.151px 0;
   padding: 1.10833rem 0;
