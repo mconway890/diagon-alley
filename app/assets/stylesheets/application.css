@@ -196,6 +196,13 @@ div.container.dining {
   padding-top: 30px;
 }
 
+#menu a {
+  color: white;
+}
+
+#menu a:hover {
+  text-decoration: none;
+}
 /* FOOTER */
 .footer {
   position: absolute;
