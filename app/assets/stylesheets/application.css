@@ -31,7 +31,7 @@ body.text-center {
   background-color: #07252f;
 }
 
-/* VIDEO */
+/* HOME */
 .home_video {
   width: 100vw;
   height: 100vh;
@@ -66,6 +66,13 @@ div.jumbotron.home {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
   text-align: center;
   color: white;
+}
+
+a#open.btn-outline-secondary:hover {
+    font-style: oblique;
+    color: #07252f;
+    background-color: #ffc500;
+    border-color: #ffffff;
 }
 
 h6 {
