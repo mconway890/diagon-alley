@@ -66,6 +66,7 @@ div.jumbotron.home {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
   text-align: center;
   color: white;
+  padding-bottom: 40px;
 }
 
 a#open.btn-outline-secondary:hover {
@@ -189,6 +190,16 @@ iframe {
   display: block;
   margin: auto;
   padding: 20px;
+}
+
+/* ABOUT */
+#about {
+  font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
+  padding-top: 40px;
+}
+
+#about-header {
+  background-color: #500c0c;
 }
 
 /* DINING */
