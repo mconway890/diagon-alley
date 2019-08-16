@@ -202,6 +202,10 @@ iframe {
   background-color: #500c0c;
 }
 
+div.row.amenities {
+  margin-left: 0;
+}
+
 /* DINING */
 div.container.dining {
   padding-top: 30px;
