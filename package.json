@@ -2,6 +2,11 @@
   "name": "diagon_alley",
   "private": true,
   "dependencies": {
-    "material-design-icons": "^3.0.1"
+    "@rails/webpacker": "^4.0.7",
+    "material-design-icons": "^3.0.1",
+    "node": "^12.8.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.8.0"
   }
 }
