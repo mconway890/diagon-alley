@@ -185,6 +185,13 @@ div.jumbotron.news {
   color: white;
 }
 
+#dark {
+  font-family: 'Bad Script', cursive;
+  font-size: 1rem;
+  color: #cd2626;
+}
+
+
 /* MAP */
 iframe {
   display: block;
