@@ -206,7 +206,7 @@ iframe {
 }
 
 #about-header {
-  background-color: #500c0c;
+  background-image: linear-gradient(-40deg,#6b170e, #be8d70);
 }
 
 div.row.amenities {
