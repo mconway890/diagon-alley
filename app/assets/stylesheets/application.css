@@ -206,6 +206,11 @@ iframe {
   padding: 20px;
 }
 
+img#map {
+  width: 100%;
+  height: auto;
+}
+
 /* ABOUT */
 #about {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
