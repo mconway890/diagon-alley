@@ -165,6 +165,19 @@ div.new, h2.display-5, p {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
+div.jumbotron {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+div.jumbotron.new {
+    background: #552dba;
+    font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    color: white;
+}
+
+
 /* NEWS AND EVENTS */
 
 div.container.news {
