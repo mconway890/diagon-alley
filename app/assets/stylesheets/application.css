@@ -161,18 +161,11 @@ h1.jumbotron-title.header-md {
 }
 
 /* WHAT'S NEW */
-div.new {
+div.new, h2.display-5, p {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
 }
 
 /* NEWS AND EVENTS */
-h1.display-3 {
-  font-size: 48px;
-}
-
-p.news {
-  font-size: 24px;
-}
 
 div.container.news {
   width: 100%;
