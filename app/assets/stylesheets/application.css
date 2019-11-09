@@ -194,6 +194,7 @@ div.jumbotron.news {
   font-family: "Magorian Regular", Georgia, Times, "Times New Roman", serif;
   text-align: center;
   color: white;
+  margin-bottom: 30px;
 }
 
 #dark {
